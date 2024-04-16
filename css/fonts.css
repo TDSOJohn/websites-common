@@ -1,0 +1,11 @@
+@font-face {
+    font-family: boldSansSerif;
+    src: url(../media/fonts/nexa/Nexa-Heavy.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: boldSansSerif;
+    src: url(../media/fonts/nexa/Nexa-ExtraLight.ttf);
+    font-weight: normal;
+}
