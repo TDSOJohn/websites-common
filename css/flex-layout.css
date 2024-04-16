@@ -1,0 +1,27 @@
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.flex-image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 6px;
+}
