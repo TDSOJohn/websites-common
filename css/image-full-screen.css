@@ -1,0 +1,11 @@
+#image-full-screen-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#image-full-screen {
+    object-fit: cover;
+    width: 95%;
+}
