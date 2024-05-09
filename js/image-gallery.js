@@ -27,7 +27,7 @@ function close_fullscreen() {
 function load_fullscreen(src) {
     // request image-full-screen component
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', './components/image-full-screen.html', true);
+    xhr.open('GET', 'common/components/image-full-screen.html', true);
     xhr.onreadystatechange = function() {
         if (this.readyState !== 4) return;
         if (this.status !== 200) return; // or whatever error handling you want
