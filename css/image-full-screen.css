@@ -3,12 +3,13 @@
     top: 0;
     left: 0;
     text-align: center;
-    width: 100%;
+    width: 94%;
+    margin: 3%;
 }
 
 #image-full-screen {
-    object-fit: cover;
-    width: 95%;
+    object-fit: contain;
+    width: 94%;
 }
 
 #full-screen-image-holder {

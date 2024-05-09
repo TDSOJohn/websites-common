@@ -20,8 +20,9 @@
 
 .image-preview {
     object-fit: cover;
-    max-width: 50%;
+    max-width: 48%;
     height: auto;
     vertical-align: middle;
     border-radius: 8px;
+    padding: 1%;
 }
