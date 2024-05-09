@@ -4,7 +4,7 @@ var host_head;
 var fullscreen_element;
 
 // change to "" for testing
-var path_to_common = "common/"
+var path_to_common = "/common"
 
 // populate variables once the page is loaded
 window.onload = (event) => {

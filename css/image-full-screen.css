@@ -8,8 +8,16 @@
 }
 
 #image-full-screen {
+    max-width: 94%;
+    max-height: 94%;
+    bottom: 3%;
+    left: 3%;
+    right: 3%;
+    top: 3%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
     object-fit: contain;
-    width: 94%;
 }
 
 #full-screen-image-holder {
