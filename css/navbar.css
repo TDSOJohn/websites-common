@@ -1,0 +1,12 @@
+@import url(./fonts.css);
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-item {
+    font-family: boldSansSerif;
+    text-decoration: none;
+    text-align: center;
+}

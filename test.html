@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Test Page</title>
     <link rel="stylesheet" href="css/flex-layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <script type="module" src="js/image-gallery.js"></script>
+    <script type="module" src="js/navbar.js"></script>
 </head>
 <body>
+    <div id="navbar" class="navbar flex-container-row">
+        <a href="#" class="navbar-item">Home</a>
+        <a href="#" class="navbar-item">Second Item</a>
+        <a href="#" class="navbar-item">Third Item</a>
+    </div>
     <div id="full-screen-image-holder"></div>
     <div id="image-gallery" class="flex-image-preview">
         <img class="image-preview" src="media/images/examples/sheep.jpg" id="sheep_image_1">
