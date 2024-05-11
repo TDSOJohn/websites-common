@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
 });
 
 function open_mobile() {
-    navbar.style.padding = '10px';
+    navbar.style.padding = '2%';
     for(const child of navbar.children) {
         child.style.display = 'block';
     }
@@ -39,6 +39,7 @@ function check_width() {
         }
         mobileHamburger.hidden = true;
         navbar.classList = "navbar flex-container-row";
+        navbar.style.position = 'static';
         for(const child of navbar.children) {
             child.style.flexBasis = String(Math.floor(100/(navbar.children.length - 1))) + "%";
         }
@@ -48,6 +49,7 @@ function check_width() {
         }
         mobileHamburger.hidden = false;
         navbar.classList = "navbar flex-container-col";
+        navbar.style.position = 'fixed';
         for(const child of navbar.children) {
             child.style.flexBasis = "100%";
         }
