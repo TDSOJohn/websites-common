@@ -4,7 +4,7 @@ let host_head;
 let fullscreen_element;
 
 // change to "" for testing
-var path_to_common = "common/"
+let path_to_common = "common/"
 
 // populate variables once the page is loaded
 window.addEventListener('load', () => {
@@ -28,7 +28,7 @@ function close_fullscreen() {
 function load_fullscreen(src) {
     // request image-full-screen component
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'components/image-full-screen.html', true);
+    xhr.open('GET', path_to_common + 'components/image-full-screen.html', true);
     xhr.onreadystatechange = function() {
         if (this.readyState !== 4) return;
         if (this.status !== 200) return; // or whatever error handling you want
