@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+#mobile-hamburger {
+    padding: 8px;
+}
+
 .navbar-item {
     font-family: boldSansSerif;
     text-decoration: none;

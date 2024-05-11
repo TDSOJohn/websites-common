@@ -33,7 +33,7 @@ function close_mobile() {
 }
 
 function check_width() {
-    if(window.innerWidth > ( 200 * navbar.children.length - 1)) {
+    if(window.innerWidth > ( 150 * navbar.children.length - 1)) {
         if(isMobileOpen === false) {
             open_mobile();
         }
