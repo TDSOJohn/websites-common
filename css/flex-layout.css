@@ -26,3 +26,10 @@
     border-radius: 8px;
     margin: 1%;
 }
+
+@media screen and (max-width: 320px) {
+    .image-preview {
+        max-width: 96%;
+        margin: 2%;
+    }
+}
