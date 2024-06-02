@@ -12,6 +12,11 @@ body {
     padding-right: 15%;
 }
 
+.phone-number {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
     .main-content {
         padding: 5%;
