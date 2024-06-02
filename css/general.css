@@ -1,3 +1,19 @@
 body {
     margin: 0;
 }
+
+.bold-text {
+    font-weight: bold;
+}
+
+.main-content {
+    background-color: var(--primary-color);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media screen and (max-width: 900px) {
+    .main-content {
+        padding: 5%;
+    }
+}
