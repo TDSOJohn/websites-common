@@ -5,19 +5,26 @@
     padding: 2%;
     width: 96%;
     background-color: var(--primary-color);
-    top: 36px;
+    top: 0;
 }
 
 #mobile-hamburger {
     background-color: var(--primary-color);
-    width: 100%;
+    width: 48px;
     padding-left: 8px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     position: fixed;
-    height: 32px;
+    height: 48px;
     top: 0;
     left: 0;
+    z-index: 999;
+}
+
+#mobile-hamburger line {
+    stroke-width: 8;
+    stroke: black;
 }
 
 .navbar-item {

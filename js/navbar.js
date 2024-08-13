@@ -33,7 +33,8 @@ function close_mobile() {
 }
 
 function check_width() {
-    if(window.innerWidth > (150 * navbar.children.length - 1)) {
+    // by multiplying by devicePixelRatio we take into account high density screens
+    if(window.innerWidth > (window.devicePixelRatio * 150 * navbar.children.length - 1)) {
         if(isMobileOpen === false) {
             open_mobile();
         }
