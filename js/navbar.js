@@ -42,7 +42,7 @@ function close_mobile() {
 function check_width() {
     // NO MOBILE
     console.log(window.innerWidth);
-    if(window.innerWidth > (Math.floor(window.devicePixelRatio * 200) * navbar.children.length - 1)) {
+    if(window.innerWidth > (Math.floor(window.devicePixelRatio * 130) * navbar.children.length - 1)) {
         if(isMobileOpen === false) {
             open_mobile();
         }
@@ -71,7 +71,7 @@ function check_width() {
         // This changes every navbarItem
         for(const child of navbar.children) {
             child.style.flexBasis = '100%';
-            child.style.fontSize = '48px';
+            child.style.fontSize = '40px';
         }
     }
 }
