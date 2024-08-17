@@ -44,6 +44,7 @@ function check_width() {
         // Maybe I should change the css?
         for(const child of navbar.children) {
             child.style.flexBasis = String(Math.floor(100/(navbar.children.length - 1))) + "%";
+            child.style.fontSize = "24px";
         }
     } else {
         if(isMobileOpen === true) {
@@ -54,6 +55,7 @@ function check_width() {
         navbar.style.position = 'fixed';
         for(const child of navbar.children) {
             child.style.flexBasis = "100%";
+            child.style.fontSize = "48px";
         }
     }
 }

@@ -11,12 +11,12 @@
 #mobile-hamburger {
     background-color: var(--primary-color);
     width: 48px;
+    height: 48px;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     position: fixed;
-    height: 48px;
     top: 0;
     left: 0;
     z-index: 999;
@@ -40,4 +40,15 @@
 
 #current-navbar-page {
     color: var(--accent-color);
+}
+
+@media (min-resolution: 2dppx) {
+    #mobile-hamburger {
+        width: 96px;
+        height: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
