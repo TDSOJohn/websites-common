@@ -6,19 +6,11 @@ body {
     font-weight: bold;
 }
 
-.main-content {
+#main-content {
     background-color: var(--primary-color);
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 .phone-number {
     color: var(--accent-color);
     text-decoration: none;
-}
-
-@media screen and (max-width: 900px) {
-    .main-content {
-        padding: 5%;
-    }
 }
