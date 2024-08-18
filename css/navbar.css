@@ -10,10 +10,7 @@
 
 #mobile-hamburger {
     background-color: var(--primary-color);
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 8px;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +23,7 @@
 }
 
 .navbar-item {
-    font-family: boldSansSerif;
+    font-family: boldSansSerif, serif;
     text-decoration: none;
     text-align: center;
     color: var(--text-color);

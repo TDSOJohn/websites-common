@@ -1,13 +1,21 @@
+// HTML elements
 let navbar;
 let mobileHamburger;
 let mainContent;
+
 let isMobileOpen = true;
+
+let hamburgerSize;
 
 // populate variables once the page is loaded
 window.addEventListener('load', () => {
     navbar = document.getElementById('navbar');
     mobileHamburger = document.getElementById('mobile-hamburger');
     mainContent = document.getElementById('main-content');
+    hamburgerSize = Math.floor(32 * window.devicePixelRatio);
+    // Set correct mobile hamburger height and width after load
+    mobileHamburger.style.height = `${hamburgerSize}px`;
+    mobileHamburger.style.width = `${hamburgerSize}px`;
     check_width();
     mobileHamburger.addEventListener('click', () => {
         if(isMobileOpen === true) {
@@ -16,11 +24,6 @@ window.addEventListener('load', () => {
             open_mobile();
         }
     });
-    const hamburgerSize = Math.floor(32 * window.devicePixelRatio);
-    // Set correct mobile hamburger height and width after load
-    mobileHamburger.style.height = `${hamburgerSize}px`;
-    mobileHamburger.style.width = `${hamburgerSize}px`;
-    console.log(window.devicePixelRatio);
 });
 
 function open_mobile() {
@@ -41,7 +44,6 @@ function close_mobile() {
 
 function check_width() {
     // NO MOBILE
-    console.log(window.innerWidth);
     if(window.innerWidth > (Math.floor(window.devicePixelRatio * 130) * navbar.children.length - 1)) {
         if(isMobileOpen === false) {
             open_mobile();
@@ -67,7 +69,7 @@ function check_width() {
         navbar.classList = 'navbar flex-container-col';
         navbar.style.position = 'fixed';
         mainContent.style.padding = '5%';
-        mainContent.style.paddingTop = '48px';
+        mainContent.style.paddingTop = `${hamburgerSize + 16}px`;
         // This changes every navbarItem
         for(const child of navbar.children) {
             child.style.flexBasis = '100%';
