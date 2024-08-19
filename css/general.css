@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: var(--primary-color);
 }
 
 .bold-text {
@@ -8,6 +9,7 @@ body {
 
 #main-content {
     background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .phone-number {
