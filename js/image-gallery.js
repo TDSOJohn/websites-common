@@ -4,7 +4,7 @@ let host_head;
 let fullscreen_element;
 
 // change to "" for testing
-let path_to_common = "";
+let path_to_common = "common/";
 
 // populate variables once the page is loaded
 window.addEventListener('load', () => {
