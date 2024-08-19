@@ -19,7 +19,7 @@
 
 #mobile-hamburger line {
     stroke-width: 8;
-    stroke: var(--secondary-color);
+    stroke: var(--text-color);
 }
 
 .navbar-item {
