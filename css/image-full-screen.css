@@ -1,17 +1,16 @@
 #image-full-screen-component {
     text-align: center;
-    vertical-align: middle;
+    align-content: center;
     width: 90%;
     height: 90%;
     padding: 2%;
     background-color: var(--primary-color);
 }
 
-.centered {
+.fixed-pos {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 3%;
+    top: 2%;
 }
 
 #image-full-screen {
