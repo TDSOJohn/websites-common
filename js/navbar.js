@@ -57,7 +57,6 @@ function check_width() {
         mobileHamburger.hidden = true;
         navbar.classList = 'navbar flex-container-row';
         navbar.style.position = 'static';
-        mainContent.style.padding = '2% 15% 0 15%';
         for(const image of all_images) {
             image.classList.remove('ip-100');
             image.classList.add('ip-50');
@@ -80,7 +79,6 @@ function check_width() {
         mobileHamburger.hidden = false;
         navbar.classList = 'navbar flex-container-col';
         navbar.style.position = 'fixed';
-        mainContent.style.padding = '5%';
         mainContent.style.paddingTop = `${hamburgerSize + 16}px`;
         for(const image of all_images) {
             image.classList.remove('ip-50');

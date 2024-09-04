@@ -22,6 +22,10 @@ body {
     color: var(--text-color);
 }
 
+.main-section {
+    padding: 2% 15% 2% 15%;
+}
+
 .phone-number {
     color: var(--accent-color);
     text-decoration: none;

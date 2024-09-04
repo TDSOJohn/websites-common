@@ -10,6 +10,22 @@
     justify-content: left;
 }
 
+.flex-container-row-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    height: min-content;
+    justify-content: left;
+    gap: 10px 30px;
+    padding: 0 30px;
+}
+
+.flex-container-row-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 .flex-image-preview {
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +38,13 @@
     object-fit: cover;
     vertical-align: middle;
     height: auto;
+    flex: 1 1 50%;
     margin: 1%;
     border-radius: 8px;
+}
+
+.flex-paragraph {
+    flex: 1 0 50%;
 }
 
 .ip-50 {
