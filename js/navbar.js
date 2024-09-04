@@ -50,7 +50,7 @@ function close_mobile() {
 
 function check_width() {
     // NO MOBILE
-    if(window.innerWidth > (Math.floor(window.devicePixelRatio * 120) * navbar.children.length - 1)) {
+    if(window.innerWidth > Math.min((Math.floor(window.devicePixelRatio * 120) * navbar.children.length - 1), 800.0)) {
         if(isMobileOpen === false) {
             open_mobile();
         }
