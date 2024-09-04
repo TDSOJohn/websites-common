@@ -52,6 +52,7 @@ function check_width() {
         navbar.classList = 'navbar flex-container-row';
         navbar.style.position = 'static';
         mainContent.style.padding = '0';
+        mainContent.style.paddingTop = '2%';
         mainContent.style.paddingLeft = '15%';
         mainContent.style.paddingRight = '15%';
         // Maybe I should change the css?
