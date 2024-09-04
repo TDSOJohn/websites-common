@@ -86,7 +86,6 @@ function check_width() {
             image.classList.remove('ip-50');
             image.classList.add('ip-100');
         }
-        console.log(flex_row_cont);
         for(const row of flex_row_cont) {
             row.classList.remove('flex-container-row');
             row.classList.add('flex-container-col');
