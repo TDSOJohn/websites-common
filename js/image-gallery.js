@@ -1,5 +1,6 @@
 let image_gallery;
 let host_head;
+let all_images;
 
 let fullscreen_element;
 
@@ -10,10 +11,11 @@ let path_to_common = "common/";
 window.addEventListener('load', () => {
     image_gallery = document.getElementById("image-gallery");
     host_head = document.head;
+    all_images = document.getElementsByClassName("image-preview");
 });
 
 window.addEventListener("load", () => {
-    for (const child of document.getElementsByClassName("image-preview"))
+    for (const child of all_images)
     {
         child.addEventListener("click", function() {
             load_fullscreen(child.src);

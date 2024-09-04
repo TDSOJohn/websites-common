@@ -20,16 +20,17 @@
 
 .image-preview {
     object-fit: cover;
-    max-width: 48%;
-    height: auto;
     vertical-align: middle;
-    border-radius: 8px;
+    height: auto;
     margin: 1%;
+    border-radius: 8px;
 }
 
-@media screen and (max-width: 320px) {
-    .image-preview {
-        max-width: 96%;
-        margin: 2%;
-    }
+.ip-50 {
+    max-width: 48%;
+}
+
+.ip-100 {
+    max-width: 96%;
+    margin: 2%;
 }
