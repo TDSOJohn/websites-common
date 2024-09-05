@@ -1,3 +1,9 @@
+@import url(./fonts.css);
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     margin: 0;
     background-color: var(--primary-color);
@@ -22,6 +28,11 @@ body {
     color: var(--text-color);
 }
 
+.main-content-paragraph {
+    font-family: boldSansSerif, serif;
+    font-size: 18px;
+}
+
 .main-section {
     padding: 2% 15% 2% 15%;
 }
@@ -44,10 +55,4 @@ body {
 #fixed-background-end {
     display: block;
     margin-top: 520px;
-}
-
-@media only screen and (max-width: 900px) {
-    .main-content-paragraph {
-        font-size: 24px;
-    }
 }

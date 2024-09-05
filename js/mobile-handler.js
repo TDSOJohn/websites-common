@@ -2,6 +2,7 @@
 let navbar;
 let mobileHamburger;
 let mainContent;
+let mainContentParagraphs;
 let all_images;
 let flex_row_cont;
 let flex_col_cont;
@@ -15,9 +16,10 @@ window.addEventListener('load', () => {
     navbar = document.getElementById('navbar');
     mobileHamburger = document.getElementById('mobile-hamburger');
     mainContent = document.getElementById('main-content');
-    all_images = document.getElementsByClassName("image-preview");
-    flex_row_cont = document.getElementsByClassName("flex-container-row");
-    flex_col_cont = document.getElementsByClassName("flex-container-col");
+    mainContentParagraphs = document.getElementsByClassName('main-content-paragraph');
+    all_images = document.getElementsByClassName('image-preview');
+    flex_row_cont = document.getElementsByClassName('flex-container-row');
+    flex_col_cont = document.getElementsByClassName('flex-container-col');
     hamburgerSize = Math.floor(32 * window.devicePixelRatio);
     // Set correct mobile hamburger height and width after load
     mobileHamburger.style.height = `${hamburgerSize}px`;
@@ -50,7 +52,7 @@ function close_mobile() {
 
 function check_width() {
     // NO MOBILE
-    if(window.innerWidth > Math.min((Math.floor(window.devicePixelRatio * 120) * navbar.children.length - 1), 800.0)) {
+    if(window.innerWidth > Math.max(window.devicePixelRatio * 400.0, Math.min(window.devicePixelRatio * 800.0, (Math.floor(window.devicePixelRatio * 120) * navbar.children.length - 1)))) {
         if(isMobileOpen === false) {
             open_mobile();
         }
@@ -58,18 +60,21 @@ function check_width() {
         navbar.classList = 'navbar flex-container-row';
         navbar.style.position = 'static';
         for(const image of all_images) {
-            image.classList.remove('ip-100');
-            image.classList.add('ip-50');
+            image.classList.remove('w-100');
+            image.classList.add('w-50');
         }
         for(const col of flex_col_cont) {
             col.classList.remove('flex-container-col');
             col.classList.add('flex-container-row');
         }
+        for(const paragraph of mainContentParagraphs) {
+            paragraph.style.fontSize = '18px';
+        }
         // Maybe I should change the css?
         // This changes every navbarItem
         for(const child of navbar.children) {
             child.style.flexBasis = String(Math.floor(100/(navbar.children.length - 1))) + '%';
-            child.style.fontSize = '24px';
+            child.style.fontSize = '18px';
         }
     } else {
         // YES MOBILE
@@ -81,12 +86,15 @@ function check_width() {
         navbar.style.position = 'fixed';
         mainContent.style.paddingTop = `${hamburgerSize + 16}px`;
         for(const image of all_images) {
-            image.classList.remove('ip-50');
-            image.classList.add('ip-100');
+            image.classList.remove('w-50');
+            image.classList.add('w-100');
         }
         for(const row of flex_row_cont) {
             row.classList.remove('flex-container-row');
             row.classList.add('flex-container-col');
+        }
+        for(const paragraph of mainContentParagraphs) {
+            paragraph.style.fontSize = '36px';
         }
         // This changes every navbarItem
         for(const child of navbar.children) {

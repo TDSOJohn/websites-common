@@ -44,14 +44,19 @@
 }
 
 .flex-paragraph {
-    flex: 1 0 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
-.ip-50 {
+.w-50 {
     max-width: 48%;
 }
 
-.ip-100 {
+.w-75 {
+    max-width: 72%;
+}
+
+.w-100 {
     max-width: 96%;
     margin: 2%;
 }
