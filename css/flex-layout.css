@@ -18,8 +18,8 @@
     overflow-x: auto;
     height: min-content;
     justify-content: left;
-    gap: 10px 30px;
-    padding: 0 30px;
+    gap: 0 30px;
+    padding: 0;
 }
 
 .flex-container-row-scroll::-webkit-scrollbar {
@@ -30,8 +30,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    gap: 10px 15px;
 }
 
 .image-preview {
@@ -39,7 +40,6 @@
     vertical-align: middle;
     height: auto;
     flex: 1 1 50%;
-    margin: 1%;
     border-radius: 8px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .w-75 {
-    max-width: 72%;
+    max-width: 73%;
 }
 
 .w-100 {
@@ -63,6 +63,9 @@
 
 @media screen and (max-width: 768px) {
     .w-50 {
+        max-width: 96%;
+    }
+    .w-75 {
         max-width: 96%;
         margin: 2%;
     }

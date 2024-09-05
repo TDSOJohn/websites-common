@@ -16,7 +16,7 @@ body {
 
 .subtitle {
     font-size: 32px;
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .bold-text {
@@ -57,3 +57,10 @@ body {
     margin-top: 520px;
 }
 
+.prim-bgnd {
+    background-color: var(--primary-color);
+}
+
+.sec-bgnd {
+    background-color: var(--secondary--bgnd--color);
+}
