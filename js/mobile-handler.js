@@ -2,8 +2,6 @@
 let navbar;
 let mobileHamburger;
 let mainContent;
-let mainContentParagraphs;
-let all_images;
 let flex_row_cont;
 let flex_col_cont;
 
@@ -16,11 +14,9 @@ window.addEventListener('load', () => {
     navbar = document.getElementById('navbar');
     mobileHamburger = document.getElementById('mobile-hamburger');
     mainContent = document.getElementById('main-content');
-    mainContentParagraphs = document.getElementsByClassName('main-content-paragraph');
-    all_images = document.getElementsByClassName('image-preview');
     flex_row_cont = document.getElementsByClassName('flex-container-row');
     flex_col_cont = document.getElementsByClassName('flex-container-col');
-    hamburgerSize = Math.floor(32 * window.devicePixelRatio);
+    hamburgerSize = 32;//Math.floor(32 * window.devicePixelRatio);
     // Set correct mobile hamburger height and width after load
     mobileHamburger.style.height = `${hamburgerSize}px`;
     mobileHamburger.style.width = `${hamburgerSize}px`;
@@ -59,16 +55,9 @@ function check_width() {
         mobileHamburger.hidden = true;
         navbar.classList = 'navbar flex-container-row';
         navbar.style.position = 'static';
-        for(const image of all_images) {
-            image.classList.remove('w-100');
-            image.classList.add('w-50');
-        }
         for(const col of flex_col_cont) {
             col.classList.remove('flex-container-col');
             col.classList.add('flex-container-row');
-        }
-        for(const paragraph of mainContentParagraphs) {
-            paragraph.style.fontSize = '18px';
         }
         // Maybe I should change the css?
         // This changes every navbarItem
@@ -85,21 +74,14 @@ function check_width() {
         navbar.classList = 'navbar flex-container-col';
         navbar.style.position = 'fixed';
         mainContent.style.paddingTop = `${hamburgerSize + 16}px`;
-        for(const image of all_images) {
-            image.classList.remove('w-50');
-            image.classList.add('w-100');
-        }
         for(const row of flex_row_cont) {
             row.classList.remove('flex-container-row');
             row.classList.add('flex-container-col');
         }
-        for(const paragraph of mainContentParagraphs) {
-            paragraph.style.fontSize = '36px';
-        }
         // This changes every navbarItem
         for(const child of navbar.children) {
             child.style.flexBasis = '100%';
-            child.style.fontSize = '40px';
+            child.style.fontSize = '30px';
         }
     }
 }
