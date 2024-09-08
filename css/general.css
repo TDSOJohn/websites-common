@@ -62,5 +62,6 @@ body {
 }
 
 .sec-bgnd {
-    background-color: var(--secondary--bgnd--color);
+    background-color: var(--secondary-bgnd-color);
+    color: var(--secondary-text-color);
 }
