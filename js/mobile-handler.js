@@ -48,7 +48,7 @@ function close_mobile() {
 
 function check_width() {
     // NO MOBILE
-    if(window.innerWidth > Math.max(window.devicePixelRatio * 400.0, Math.min(window.devicePixelRatio * 800.0, (Math.floor(window.devicePixelRatio * 120) * navbar.children.length - 1)))) {
+    if(window.innerWidth > Math.max(window.devicePixelRatio * 400.0, Math.min(window.devicePixelRatio * 800.0, (Math.floor(window.devicePixelRatio * 70) * navbar.children.length - 1)))) {
         if(isMobileOpen === false) {
             open_mobile();
         }
