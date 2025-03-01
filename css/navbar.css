@@ -2,10 +2,11 @@
 
 .navbar {
     margin: 0;
-    padding: 2%;
-    width: 96%;
+    padding: 20px;
+    width: 100%;
     background-color: var(--primary-color);
     top: 0;
+    position: fixed;
 }
 
 #mobile-hamburger {

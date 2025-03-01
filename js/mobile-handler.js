@@ -54,7 +54,6 @@ function check_width() {
         }
         mobileHamburger.hidden = true;
         navbar.classList = 'navbar flex-container-row';
-        navbar.style.position = 'static';
         for(const col of flex_col_cont) {
             col.classList.remove('flex-container-col');
             col.classList.add('flex-container-row');
@@ -72,7 +71,6 @@ function check_width() {
         }
         mobileHamburger.hidden = false;
         navbar.classList = 'navbar flex-container-col';
-        navbar.style.position = 'fixed';
         mainContent.style.paddingTop = `${hamburgerSize + 16}px`;
         for(const row of flex_row_cont) {
             row.classList.remove('flex-container-row');
