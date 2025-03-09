@@ -35,8 +35,15 @@ body {
     font-size: 18px;
 }
 
+@container (min-width: 50em) {
+    .main-content-paragraph {
+        column-count: 2;
+    }
+}
+
 .main-section {
     padding: 2% 15% 2% 15%;
+    container-type: inline-size;
 }
 
 .phone-number {
