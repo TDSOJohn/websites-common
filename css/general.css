@@ -33,10 +33,13 @@ body {
 .main-content-paragraph {
     font-family: boldSansSerif, serif;
     font-size: 18px;
+    max-width: 50em;
+    margin: 0 auto;
 }
 
+/* can't use with main content paragraph for now */
 @container (min-width: 50em) {
-    .main-content-paragraph {
+    .fold-in-two {
         column-count: 2;
     }
 }
